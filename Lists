@@ -1,0 +1,20 @@
+# Creating lists
+fruits = ['apple', 'banana', 'cherry']
+numbers = [1, 2, 3, 4, 5]
+mixed = [1, 'hello', 3.14, True]
+
+# Modifying lists
+fruits[1] = 'blueberry'  # Mutable - can change elements
+fruits.append('orange')  # Add new element
+fruits.remove('apple')   # Remove element
+
+print(fruits)  # Output: ['blueberry', 'cherry', 'orange']
+
+# When to use:
+# - When you need to modify the collection
+# - For stacks or queues (with append/pop)
+# - When you need to frequently add/remove items
+
+# List operations
+squares = [x**2 for x in range(5)]  # List comprehension
+print(squares)  # Output: [0, 1, 4, 9, 16]
