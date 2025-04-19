@@ -1,0 +1,20 @@
+# Creating a tuple
+coordinates = (10.5, 20.3)
+colors = ('red', 'green', 'blue')
+mixed = (1, 'hello', 3.14, True)
+
+# Accessing elements
+print(colors[1])  # Output: 'green'
+
+# Tuples are immutable - this would raise an error
+# colors[1] = 'yellow'
+
+# When to use:
+# - For fixed collections of items (like coordinates)
+# - When you need dictionary keys (must be immutable)
+# - As return values from functions when returning multiple values
+
+def get_user_info():
+    return ("Alice", 30, "alice@example.com")
+
+name, age, email = get_user_info()  # Tuple unpacking
